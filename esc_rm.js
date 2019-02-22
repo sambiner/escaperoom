@@ -1,3 +1,7 @@
+var a = document.getElementById("change1");	
+var b = document.getElementById("change2");
+var c = document.getElementById("change3");
+
 function changeimg(el){
 	if (el.src.match("images/alien_x.png")){
 		el.src = "images/big_chill.png";
@@ -38,7 +42,6 @@ function changeimg(el){
 	} else {
 		//do nothing
 	}
-	checkConfiguration();
 }
 function changeimg1(el){
 	if (el.src.match("images/alien_x.png")){
@@ -80,7 +83,6 @@ function changeimg1(el){
 	} else {
 		//do nothing
 	}
-	checkConfiguration();
 }
 function changeimg2(el){
 	if (el.src.match("images/alien_x.png")){
@@ -122,6 +124,13 @@ function changeimg2(el){
 	} else {
 		//do nothing
 	}
-	checkConfiguration();
 }
 
+function checkConfig(el){
+	if (a.src.match == "images/big_chill.png" && b.src.match == "images/echo_echo.png" && c.src.match == "images/nanomech.png"){
+		   document.getElementById("small-rectangle1").classList.remove("green");
+		   document.getElementById("small-rectangle1").classList.add("orange");
+	   } else {
+		 
+	   }
+}

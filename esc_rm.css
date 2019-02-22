@@ -5,8 +5,12 @@ body{
 	background-color: #000000;
 }
 
+input[type=button]{
+	font-size: 30px;
+}
+
 p{
-	font: #ffffff;
+	color: #000000;
 	font-size: 75px;
 }
 
@@ -58,5 +62,12 @@ img:hover{
 .small-rectangle{
 	height: 100%;
 	width: calc(100%/2.2857);
+}
+
+.green{
 	background-color: #49AA43;
+}
+
+.orange{
+	background-color: #ff6a00;
 }
