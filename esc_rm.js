@@ -127,7 +127,7 @@ function changeimg2(el){
 }
 
 function checkConfig(el){
-	if (a.src.match == "images/big_chill.png" && b.src.match == "images/echo_echo.png" && c.src.match == "images/nanomech.png"){
+	if (a.src.match("images/big_chill.png") && b.src.match("images/echo_echo.png") && c.src.match("images/nanomech.png")){
 		   document.getElementById("small-rectangle1").classList.remove("green");
 		   document.getElementById("small-rectangle1").classList.add("orange");
 	   } else {
