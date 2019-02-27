@@ -71,3 +71,7 @@ img:hover{
 .orange{
 	background-color: #ff6a00;
 }
+
+.hide{
+	visibility: hidden;
+}

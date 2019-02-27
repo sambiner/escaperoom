@@ -1,8 +1,10 @@
-var a = document.getElementById("change1");	
-var b = document.getElementById("change2");
-var c = document.getElementById("change3");
+a = document.getElementById("change1");	
+b = document.getElementById("change2");
+c = document.getElementById("change3");
+var click_counter = 0;
+var audio = document.getElementById("audio");
 
-function changeimg(el){
+function changeimg(el){ //This makes the images cycle for the 1st image
 	if (el.src.match("images/alien_x.png")){
 		el.src = "images/big_chill.png";
 	} else if (el.src.match("images/big_chill.png")){
@@ -43,7 +45,7 @@ function changeimg(el){
 		//do nothing
 	}
 }
-function changeimg1(el){
+function changeimg1(el){ //This makes the images cycle for the 2nd image
 	if (el.src.match("images/alien_x.png")){
 		el.src = "images/big_chill.png";
 	} else if (el.src.match("images/big_chill.png")){
@@ -84,7 +86,7 @@ function changeimg1(el){
 		//do nothing
 	}
 }
-function changeimg2(el){
+function changeimg2(el){ //This makes the images cycle for the 3rd image
 	if (el.src.match("images/alien_x.png")){
 		el.src = "images/big_chill.png";
 	} else if (el.src.match("images/big_chill.png")){
@@ -127,10 +129,28 @@ function changeimg2(el){
 }
 
 function checkConfig(el){
-	if (a.src.match("images/big_chill.png") && b.src.match("images/echo_echo.png") && c.src.match("images/nanomech.png")){
+	if (document.getElementById("change1").src.match("images/big_chill.png") && document.getElementById("change2").src.match("images/echo_echo.png") && document.getElementById("change3").src.match("images/nanomech.png")){
 		   document.getElementById("small-rectangle1").classList.remove("green");
 		   document.getElementById("small-rectangle1").classList.add("orange");
 	   } else {
 		 
 	   }
+}
+
+function earRape(el){
+	document.getElementById("audio").play();
+}
+
+function hideMe (el){
+	el.classList.add("hide");
+	click_counter++;
+	checkCounter();
+}
+
+function checkCounter(){
+	if (click_counter == 4){
+		document.getElementById("ear-rape").classList.remove("hide");
+	} else{
+		
+	}
 }
