@@ -1,6 +1,3 @@
-a = document.getElementById("change1");	
-b = document.getElementById("change2");
-c = document.getElementById("change3");
 var click_counter = 0;
 var audio = document.getElementById("audio");
 
@@ -87,7 +84,7 @@ function changeimg1(el){ //This makes the images cycle for the 2nd image
 	}
 }
 function changeimg2(el){ //This makes the images cycle for the 3rd image
-	if (el.src.match("images/alien_x.png")){
+	if (document.getElementById("change3").src.match("images/alien_x.png")){
 		el.src = "images/big_chill.png";
 	} else if (el.src.match("images/big_chill.png")){
 		el.src = "images/brainstorm.png";
@@ -130,8 +127,8 @@ function changeimg2(el){ //This makes the images cycle for the 3rd image
 
 function checkConfig(el){
 	if (document.getElementById("change1").src.match("images/big_chill.png") && document.getElementById("change2").src.match("images/echo_echo.png") && document.getElementById("change3").src.match("images/nanomech.png")){
-		   document.getElementById("small-rectangle1").classList.remove("green");
-		   document.getElementById("small-rectangle1").classList.add("orange");
+		   document.getElementById("input1").classList.remove("hide");
+		   document.getElementById("input").classList.add("hide");
 	   } else {
 		 
 	   }
