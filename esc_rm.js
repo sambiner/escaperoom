@@ -129,8 +129,13 @@ function checkConfig(el){
 	if (document.getElementById("change1").src.match("images/big_chill.png") && document.getElementById("change2").src.match("images/echo_echo.png") && document.getElementById("change3").src.match("images/nanomech.png")){
 		   document.getElementById("input1").classList.remove("hide");
 		   document.getElementById("input").classList.add("hide");
+		   document.getElementById("key").classList.remove("hide");
+	   } else if (document.getElementById("change1").src.match("images/brainstorm.png") && document.getElementById("change2").src.match("images/echo_echo.png") && document.getElementById("change3").src.match("images/nanomech.png")){
+		  document.getElementById("input1").classList.remove("hide");
+		  document.getElementById("input").classList.add("hide");
+		  document.getElementById("key").classList.remove("hide");
 	   } else {
-		 
+		   
 	   }
 }
 
