@@ -1,6 +1,5 @@
 var click_counter = 0;
 var audio = document.getElementById("audio");
-
 function changeimg(el){ //This makes the images cycle for the 1st image
 	if (el.src.match("images/alien_x.png") && document.getElementById("placeholder").innerHTML == "Alien X"){
 		el.src = "images/big_chill.png";
@@ -57,7 +56,6 @@ function changeimg(el){ //This makes the images cycle for the 1st image
 		el.src = "images/alien_x.png";
 		document.getElementById("placeholder").innerHTML = "Alien X";
 	} else {
-		//do nothing
 	}
 }
 function changeimg1(el){ //This makes the images cycle for the 2nd image
@@ -116,7 +114,6 @@ function changeimg1(el){ //This makes the images cycle for the 2nd image
 		el.src = "images/alien_x.png";
 		document.getElementById("placeholder1").innerHTML = "Alien X";
 	} else {
-		//do nothing
 	}
 }
 function changeimg2(el){ //This makes the images cycle for the 3rd image
@@ -175,10 +172,8 @@ function changeimg2(el){ //This makes the images cycle for the 3rd image
 		el.src = "images/alien_x.png";
 		document.getElementById("placeholder2").innerHTML = "Alien X";
 	} else {
-		//do nothing
 	}
 }
-
 function checkConfig(el){
 	if (document.getElementById("change1").src.match("images/big_chill.png") && document.getElementById("change2").src.match("images/echo_echo.png") && document.getElementById("change3").src.match("images/nanomech.png")){
 		   document.getElementById("input1").classList.remove("hide");
@@ -189,28 +184,52 @@ function checkConfig(el){
 		  document.getElementById("input").classList.add("hide");
 		  document.getElementById("key").classList.remove("hide");
 	   } else {
-		   
 	   }
 }
-
 function earRape(el){
 	document.getElementById("audio").play();
 }
-
 function hideMe (el){
 	el.classList.add("hide");
 	click_counter++;
 	checkCounter();
 }
-
 function checkCounter(){
 	if (click_counter == 4){
 		document.getElementById("ear-rape").classList.remove("hide");
 	} else{
-		
 	}
 }
-
 function winGame(el){
-	
+	document.getElementById("small-square1").classList.remove("black");
+	document.getElementById("image").classList.add("hide");
+	document.getElementById("filler1").classList.remove("black");
+	document.getElementById("small-rectangle1").classList.remove("green");
+	document.getElementById("key").classList.add("hide");
+	document.getElementById("input1").classList.add("hide");
+	document.getElementById("filler2").classList.remove("black");
+	document.getElementById("check").classList.add("hide");
+	document.getElementById("small-square2").classList.remove("black");
+	document.getElementById("image1").classList.add("hide");
+	document.getElementById("big-square1").classList.remove("black");
+	document.getElementById("change1").classList.add("hide");
+	document.getElementById("square1").classList.remove("black");
+	document.getElementById("placeholder").classList.add("hide");
+	document.getElementById("big-square2").classList.remove("black");
+	document.getElementById("change2").classList.add("hide");
+	document.getElementById("square2").classList.remove("black");
+	document.getElementById("placeholder1").classList.add("hide");
+	document.getElementById("big-square3").classList.remove("black");
+	document.getElementById("change3").classList.add("hide");
+	document.getElementById("square3").classList.remove("black");
+	document.getElementById("placeholder2").classList.add("hide");
+	document.getElementById("small-square3").classList.remove("black");
+	document.getElementById("image2").classList.add("hide");
+	document.getElementById("filler3").classList.remove("black");
+	document.getElementById("small-rectangle").classList.remove("green");
+	document.getElementById("blurb").classList.add("hide");
+	document.getElementById("filler4").classList.remove("black");
+	document.getElementById("small-square4").classList.remove("black");
+	document.getElementById("image3").classList.add("hide");
+	document.getElementById("theme").play();
 }

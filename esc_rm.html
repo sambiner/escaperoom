@@ -21,16 +21,15 @@
 					<h1 class="" id="input">Click the check mark when you are finished</h1>
 				</div>
 				<div class="inside-rectangle center-content">
-					<img src="images/magic_key.png" class="hide restrict-img-size" id="key" onClick=""/>
+					<img src="images/magic_key.png" class="hide restrict-img-size" id="key" onClick="winGame(this)"/>
 				</div>
 				<div class="inside-rectangle center-content">
 					<h1 class="hide" id="input1">Congrats! You win.</h1>
-					<img src="" class="" id=""/>
 				</div>
 			</div>
 			<!--Filler Space-->
 			<div class="filler center-content black" id="filler2">
-				<img src="images/check.png" class="restrict-img-size" onClick="checkConfig(this)"/>
+				<img src="images/check.png" class="restrict-img-size" onClick="checkConfig(this)" id="check"/>
 			</div>
 			<div class="small-square center-content black" id="small-square2">
 				<img src="images/plumbers.png" class="restrict-img-size" id="image1" onClick="hideMe(this)"/>
@@ -41,40 +40,41 @@
 			<div class="big-square center-content black" id="big-square1">
 				<img src="images/alien_x.png" class="restrict-img-size" id="change1"  onClick="changeimg(this)"/>
 			</div>
-			<div class="square center-content black">
-				<h2 id="placeholder">Alien X</h2>
+			<div class="square center-content black" id="square1">
+				<h2 class="" id="placeholder">Alien X</h2>
 			</div>
 			<div class="big-square center-content black" id="big-square2">
 				<img src="images/alien_x.png" class="restrict-img-size" id="change2" onClick="changeimg1(this)"/>
 			</div>
-			<div class="square center-content black">
-				<h2 id="placeholder1">Alien X</h2>
+			<div class="square center-content black" id="square2">
+				<h2 class="" id="placeholder1">Alien X</h2>
 			</div>
 			<div class="big-square center-content black" id="big-square3">
 				<img src="images/alien_x.png" class="restrict-img-size" id="change3" onClick="changeimg2(this)"/>
 			</div>
-			<div class="square center-content black">
-				<h2 id="placeholder2">Alien X</h2>
+			<div class="square center-content black" id="square3">
+				<h2 class="" id="placeholder2">Alien X</h2>
 			</div>
 		</div>
 		<!--Bottom Row-->
 		<div class="rectangle" id="rectangle2">
-			<div class="small-square center-content black" id="small-square1">
+			<div class="small-square center-content black" id="small-square3">
 				<img src="images/plumbers.png" class="restrict-img-size" id="image2" onClick="hideMe(this)"/>
 			</div>
 			<!--Filler Space-->
-			<div class="filler black" id="filler1">
+			<div class="filler black" id="filler3">
 			</div>
 			<div class="small-rectangle green center-content" id="small-rectangle">
-				<p><b>Spell out the main character's name with the first letter of each alien's name.</b></p>
+				<p class="" id="blurb"><b>Spell out the main character's name with the first letter of each alien's name.</b></p>
 			</div>
 			<!--Filler Space-->
-			<div class="filler black" id="filler2">
+			<div class="filler black" id="filler4">
 			</div>
-			<div class="small-square center-content black" id="small-square2">
+			<div class="small-square center-content black" id="small-square4">
 				<img src="images/plumbers.png" class="restrict-img-size" id="image3" onClick="hideMe(this)"/>
 			</div>
 		</div>
 		<audio src="images/reeee.mp3" id="audio"></audio>
+		<audio id="theme" src="images/theme_song.mp3" type="audio/mpeg" loop> </audio>
 	</body>
 </html>

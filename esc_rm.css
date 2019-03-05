@@ -2,7 +2,7 @@ body{
 	margin: 0;
 	height: 100vh;
 	width: 100vw;
-	background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/0/0b/Ben_10_Alien_Force_logo.svg/200px-Ben_10_Alien_Force_logo.svg.png");
+	background-image: url("images/logo.png");
 }
 
 input[type=button]{
