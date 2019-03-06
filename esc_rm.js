@@ -179,11 +179,15 @@ function checkConfig(el){
 		   document.getElementById("input1").classList.remove("hide");
 		   document.getElementById("input").classList.add("hide");
 		   document.getElementById("key").classList.remove("hide");
+		   document.getElementById("input2").classList.add("hide");
 	   } else if (document.getElementById("change1").src.match("images/brainstorm.png") && document.getElementById("change2").src.match("images/echo_echo.png") && document.getElementById("change3").src.match("images/nanomech.png")){
 		  document.getElementById("input1").classList.remove("hide");
 		  document.getElementById("input").classList.add("hide");
 		  document.getElementById("key").classList.remove("hide");
+		  document.getElementById("input2").classList.add("hide");
 	   } else {
+		   document.getElementById("input").classList.add("hide");
+		   document.getElementById("input2").classList.remove("hide");
 	   }
 }
 function earRape(el){
@@ -231,5 +235,6 @@ function winGame(el){
 	document.getElementById("filler4").classList.remove("black");
 	document.getElementById("small-square4").classList.remove("black");
 	document.getElementById("image3").classList.add("hide");
+	document.getElementById("blurb1").classList.add("hide");
 	document.getElementById("theme").play();
 }

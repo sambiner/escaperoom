@@ -26,7 +26,7 @@ h2{
 
 p{
 	color: #000000;
-	font-size: 200%;
+	font-size: 186%;
 	text-align: center;
 }
 
@@ -88,6 +88,12 @@ img:hover{
 .small-rectangle{
 	height: 100%;
 	width: calc(100%/2.2857);
+}
+
+.small-rectangle1{
+	height: 100%;
+	width: calc(100%/2.2857);
+	display: block;
 }
 
 .green{
