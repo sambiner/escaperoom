@@ -220,7 +220,7 @@ function winGame(el){
 	document.getElementById("square1").classList.remove("black");
 	document.getElementById("placeholder").classList.add("hide");
 	document.getElementById("big-square2").classList.remove("black");
-	document.getElementById("change2").classList.add("hide");
+	document.getElementById("change2").classList.add("display");
 	document.getElementById("square2").classList.remove("black");
 	document.getElementById("placeholder1").classList.add("hide");
 	document.getElementById("big-square3").classList.remove("black");
@@ -236,5 +236,6 @@ function winGame(el){
 	document.getElementById("small-square4").classList.remove("black");
 	document.getElementById("image3").classList.add("hide");
 	document.getElementById("blurb1").classList.add("hide");
+	document.getElementById("remember").classList.remove("display");
 	document.getElementById("theme").play();
 }
