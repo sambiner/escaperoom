@@ -4,16 +4,12 @@ body{
 	width: 100vw;
 	background-image: url("images/logo.png");
 }
-/*comment*/
-input[type=button]{
+
+input[type=button]{ /*Changes a buttons font size*/
 	font-size: 30px;
 }
 
-input[type=text]{
-	font-size: 30px;
-}
-
-h1{
+h1{ /*Changes an h1 tag's font size and alignment*/
 	font-size: 25px;
 	text-align: center;
 }
@@ -30,7 +26,7 @@ p{
 	text-align: center;
 }
 
-.inside-rectangle{
+.inside-rectangle{ /*Div for the pictures*/
 	height: 100%;
 	width: calc(100%/3);
 }
@@ -42,7 +38,7 @@ p{
 }
 
 
-img:hover{
+img:hover{ /*Makes the images pop out when hovered over*/
 	cursor: default;
 	transform: scale(1.05, 1.05);
 }
@@ -53,7 +49,7 @@ img:hover{
 	max-width: 80%;
 }
 
-.display{
+.display{ /*Effectively removes the element from the page when it is called upon*/
 	display: none;
 }
 
@@ -100,7 +96,7 @@ img:hover{
 	display: block;
 }
 
-.green{
+.green{ /*Color Backgrounds so I can remove or add them to execute JavaScript functions*/
 	background-color: #49AA43;
 }
 
@@ -108,6 +104,6 @@ img:hover{
 	background-color: #000000;
 }
 
-.hide{
+.hide{ /*Makes the visibility of whatever it is linked to hidden so people can't see it*/
 	visibility: hidden;
 }
