@@ -4,7 +4,7 @@ body{
 	width: 100vw;
 	background-image: url("images/logo.png");
 }
-
+/*comment*/
 input[type=button]{
 	font-size: 30px;
 }
@@ -21,12 +21,12 @@ h1{
 h2{
 	color: white;
 	text-align: center;
-	font-size: 20px;
+	font-size: 30px;
 }
 
 p{
 	color: #000000;
-	font-size: 186%;
+	font-size: 160%;
 	text-align: center;
 }
 

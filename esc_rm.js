@@ -2,8 +2,8 @@ var click_counter = 0;
 var audio = document.getElementById("audio");
 function changeimg(el){ //This makes the images cycle for the 1st image
 	if (el.src.match("images/alien_x.png") && document.getElementById("placeholder").innerHTML == "Alien X"){
-		el.src = "images/big_chill.png";
-		document.getElementById("placeholder").innerHTML = "Big Chill";
+		el.src = "images/big_chill.png"; //Changes the image to the next alien
+		document.getElementById("placeholder").innerHTML = "Big Chill"; //Changes the text to signify the alien's name
 	} else if (el.src.match("images/big_chill.png") && document.getElementById("placeholder").innerHTML == "Big Chill"){
 		el.src = "images/brainstorm.png";
 		document.getElementById("placeholder").innerHTML = "Brainstorm";
@@ -56,12 +56,13 @@ function changeimg(el){ //This makes the images cycle for the 1st image
 		el.src = "images/alien_x.png";
 		document.getElementById("placeholder").innerHTML = "Alien X";
 	} else {
+		//If none of the above terms apply then do nothing
 	}
 }
 function changeimg1(el){ //This makes the images cycle for the 2nd image
 	if (el.src.match("images/alien_x.png") && document.getElementById("placeholder1").innerHTML == "Alien X"){
-		el.src = "images/big_chill.png";
-		document.getElementById("placeholder1").innerHTML = "Big Chill";
+		el.src = "images/big_chill.png"; //Changes the image to the next alien
+		document.getElementById("placeholder1").innerHTML = "Big Chill"; //Changes the text to signify the alien's name
 	} else if (el.src.match("images/big_chill.png") && document.getElementById("placeholder1").innerHTML == "Big Chill"){
 		el.src = "images/brainstorm.png";
 		document.getElementById("placeholder1").innerHTML = "Brainstorm";
@@ -114,12 +115,13 @@ function changeimg1(el){ //This makes the images cycle for the 2nd image
 		el.src = "images/alien_x.png";
 		document.getElementById("placeholder1").innerHTML = "Alien X";
 	} else {
+		//If none of the above terms apply then do nothing
 	}
 }
 function changeimg2(el){ //This makes the images cycle for the 3rd image
 	if (document.getElementById("change3").src.match("images/alien_x.png") && document.getElementById("placeholder2").innerHTML == "Alien X"){
-		el.src = "images/big_chill.png";
-		document.getElementById("placeholder2").innerHTML = "Big Chill";
+		el.src = "images/big_chill.png"; //Changes the image to the next alien
+		document.getElementById("placeholder2").innerHTML = "Big Chill"; //Changes the text to signify the alien's name
 	} else if (el.src.match("images/big_chill.png") && document.getElementById("placeholder2").innerHTML == "Big Chill"){
 		el.src = "images/brainstorm.png";
 		document.getElementById("placeholder2").innerHTML = "Brainstorm";
@@ -172,15 +174,16 @@ function changeimg2(el){ //This makes the images cycle for the 3rd image
 		el.src = "images/alien_x.png";
 		document.getElementById("placeholder2").innerHTML = "Alien X";
 	} else {
+		//If none of the above terms apply then do nothing
 	}
 }
-function checkConfig(el){
-	if (document.getElementById("change1").src.match("images/big_chill.png") && document.getElementById("change2").src.match("images/echo_echo.png") && document.getElementById("change3").src.match("images/nanomech.png")){
+function checkConfig(el){ //This check the configuration of the three main images to determine if you win
+	if (document.getElementById("change1").src.match("images/big_chill.png") && document.getElementById("change2").src.match("images/echo_echo.png") && document.getElementById("change3").src.match("images/nanomech.png")){ //Gives one stipulation for the check configuration button 
 		   document.getElementById("input1").classList.remove("hide");
 		   document.getElementById("input").classList.add("hide");
 		   document.getElementById("key").classList.remove("hide");
 		   document.getElementById("input2").classList.add("hide");
-	   } else if (document.getElementById("change1").src.match("images/brainstorm.png") && document.getElementById("change2").src.match("images/echo_echo.png") && document.getElementById("change3").src.match("images/nanomech.png")){
+	   } else if (document.getElementById("change1").src.match("images/brainstorm.png") && document.getElementById("change2").src.match("images/echo_echo.png") && document.getElementById("change3").src.match("images/nanomech.png")){ //Give another stipulation for the button
 		  document.getElementById("input1").classList.remove("hide");
 		  document.getElementById("input").classList.add("hide");
 		  document.getElementById("key").classList.remove("hide");
@@ -190,22 +193,23 @@ function checkConfig(el){
 		   document.getElementById("input2").classList.remove("hide");
 	   }
 }
-function earRape(el){
+function earRape(el){ //This plays an extremely loud sound
 	document.getElementById("audio").play();
 }
-function hideMe (el){
-	el.classList.add("hide");
-	click_counter++;
-	checkCounter();
+function hideMe (el){ //This hides the corner pictures
+	el.classList.add("hide"); //Adds hide class to each element this attribute is in
+	click_counter++; //Adds number to click counter
+	checkCounter(); //Checks click counter and automatically executes the checkCounter function if the requirements are met
 }
-function checkCounter(){
-	if (click_counter == 4){
+function checkCounter(){ //This makes a button appear when all the corner images are clicked and hidden
+	if (click_counter == 4){ //If the click counter is equal to 4 then remove the hide class on a specific button
 		document.getElementById("ear-rape").classList.remove("hide");
 	} else{
+		//If none of the above terms apply then do nothing
 	}
 }
-function winGame(el){
-	document.getElementById("small-square1").classList.remove("black");
+function winGame(el){ //This is what clicking the key does when you win
+	document.getElementById("small-square1").classList.remove("black"); //These get specific elements so the function can target certain CSS classes inside those HTML elements
 	document.getElementById("image").classList.add("hide");
 	document.getElementById("filler1").classList.remove("black");
 	document.getElementById("small-rectangle1").classList.remove("green");
