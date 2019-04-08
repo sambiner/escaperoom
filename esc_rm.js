@@ -235,11 +235,11 @@ function winGame(el){ //This is what clicking the key does when you win
 	document.getElementById("image2").classList.add("hide");
 	document.getElementById("filler3").classList.remove("black");
 	document.getElementById("small-rectangle").classList.remove("green");
-	document.getElementById("blurb").classList.add("hide");
 	document.getElementById("filler4").classList.remove("black");
 	document.getElementById("small-square4").classList.remove("black");
 	document.getElementById("image3").classList.add("hide");
 	document.getElementById("blurb1").classList.add("hide");
 	document.getElementById("remember").classList.remove("display");
 	document.getElementById("theme").play();
+	document.getElementById("ear-rape").classList.add("hide");
 }

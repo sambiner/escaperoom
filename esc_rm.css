@@ -10,7 +10,8 @@ input[type=button]{ /*Changes a buttons font size*/
 }
 
 h1{ /*Changes an h1 tag's font size and alignment*/
-	font-size: 25px;
+	font-size: 175%;
+	color: #000000;
 	text-align: center;
 }
 
@@ -21,8 +22,8 @@ h2{
 }
 
 p{
-	color: #000000;
-	font-size: 160%;
+	color: #00ffff;
+	font-size: 222%;
 	text-align: center;
 }
 
